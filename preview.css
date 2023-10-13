@@ -1,0 +1,251 @@
+/* Global */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding-top: 50px;
+  }
+  
+  .background-image {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  @media (max-width: 767px) {
+    .background-image {
+      background-size: contain;
+      background-position: top;
+      height: auto;
+    }
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #064408;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .header .logo img {
+    width: 60px;
+    border-radius: 60%;
+    margin-left: 30px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .search form {
+    display: flex;
+  }
+  
+  .search input[type="text"] {
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+  }
+  
+  .search button[type="submit"] {
+    padding: 8px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .buttons a {
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #064408;
+  }
+  
+  .buttons a:hover {
+    background-color: #003A02;
+    color: #fff;
+  }
+  
+  /* Welcome Box */
+  .welcome-box {
+    position: absolute;
+    top: 100px;
+    left: 19px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(165, 125, 50, 0.7);
+    border-radius: 10px;
+  }
+  
+  .welcome-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-box h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .welcome-box a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #064408;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  /* Edit and Post Forms */
+  .form-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 250px;
+  }
+  
+  .form-container {
+    background-color: rgba(165, 125, 50, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 10px;
+  }
+  
+  .form-container h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-form label,
+  .edit-form label {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .post-form input[type="text"],
+  .edit-form input[type="text"],
+  .post-form textarea,
+  .edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .post-form button[type="submit"],
+  .edit-form button[type="submit"] {
+    background-color: #064408;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .post-form button[type="submit"]:hover,
+  .edit-form button[type="submit"]:hover {
+    background-color: #003A02;
+  }
+  
+  .post-form textarea,
+  .edit-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  /* Social Box */
+.social-box {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon i {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #064408;
+}
+
+.social-icon i:hover {
+  background-color: #003A02;
+}
+
+/* Welcome Box */
+.welcome-box {
+  position: absolute;
+  top: 100px;
+  left: 19px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(165, 125, 50, 0.7);
+  border-radius: 10px;
+}
+
+.welcome-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.welcome-box h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.welcome-box a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #064408;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}

@@ -1,0 +1,336 @@
+/* Global */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding-top: 50px;
+  }
+  
+  .background-image {
+    background-image: url('backgroundlogin.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  @media (max-width: 767px) {
+    .background-image {
+      background-size: contain;
+      background-position: top;
+      height: auto;
+    }
+  }
+    
+    @media (max-width: 767px) {
+      .background-image {
+        background-size: contain;
+        background-position: top;
+        height: auto;
+      }
+    }
+    
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #064408;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .header .logo img {
+      width: 60px;
+      border-radius: 60%;
+      margin-left: 30px;
+  }
+    
+    .logo h1 {
+      margin: 0;
+      color: #fff;
+    }
+    
+    .search form {
+      display: flex;
+    }
+    
+    .search input[type="text"] {
+      padding: 8px;
+      border-radius: 4px 0 0 4px;
+      border: none;
+    }
+    
+    .search button[type="submit"] {
+      padding: 8px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .buttons a {
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      margin-left: 10px;
+      background-color: #064408; 
+    }
+    
+    .buttons a:hover {
+      background-color: #003A02; 
+      color: #fff;
+    }
+    
+    
+    /* Welcome Box */
+    .welcome-box {
+      position: absolute;
+      top: 100px;
+      left: 19px;
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(165, 125, 50, 0.7);
+      border-radius: 10px;
+    }
+    
+    .welcome-box img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .welcome-box h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .welcome-box a {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #064408;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 10px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    
+    /* Login Form and Signup Form */
+  .form-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 250px;
+  }
+  
+  .form-container {
+    background-color: rgba(165, 125, 50, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 10px;
+  }
+  
+  .form-container h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label,
+  .signup-form label {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-form button[type="submit"],
+  .signup-form button[type="submit"] {
+    background-color: #064408;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-form button[type="submit"]:hover,
+  .signup-form button[type="submit"]:hover {
+    background-color: #003A02;
+  }
+  
+  .error {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+    
+    /* Footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #064408;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+    }
+    .footer .logo img {
+      width: 60px;
+      border-radius: 60%;
+      margin-left: 30px;
+  }
+    
+    .subscribe-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .subscribe-box label {
+      font-size: 16px;
+      color: #fff;
+      margin-right: 10px;
+    }
+    
+    .subscribe-box input[type="email"] {
+      padding: 8px;
+      border-radius: 4px 0 0 4px;
+      border: none;
+    }
+    
+    .subscribe-box button[type="submit"] {
+      padding: 8px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .social-icons {
+      position: fixed;
+      top: 30%;
+      right: 20px;
+    }
+    
+    .social-box {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .social-box a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+    
+    .social-box a img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .form-container button {
+      display: inline-block;
+      margin: 10px;
+      padding: 5px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: #fff;
+    }
+    .form-container button:hover {
+      background-color: #3e8e41;
+    }
+    
+    #title {
+      width: 100%;
+      max-width: 800px;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    
+    #post {
+      width: 100%;
+      height: 200px;
+      max-width: 800px;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    
+    label {
+      display: inline-block;
+      width: 100px;
+      text-align: left;
+    }
+    
+    input[type="text"],
+    textarea {
+      display: inline-block;
+      width: calc(100% - 100px);
+      vertical-align: top;
+    }
+    #previewBtn,
+#postBtn,
+#clearBtn {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#previewBtn,
+#postBtn {
+  width: 100px;
+}
+
+#clearBtn {
+  width: 80px;
+}
